@@ -256,3 +256,79 @@ aside{
 .aside-article h3:hover {
   text-decoration: underline;
 }
+
+
+/*for the theory of inflation grid*/
+
+.article-grid-div{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.article-grid-main{
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.article-grid{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.article-grid-title h1{
+  font-size: 1.25rem;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.article-grid-title p{
+  font-size: .875rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.article-grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+
+
+.article-grid-item img{
+  height: 150px;
+}
+
+.article-grid-item-text p{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.article-grid-item-text span{
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+.article-grid-footer{
+  margin-top: 2rem;
+}
+
+.article-grid-footer::before{
+  width: 60px;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin: 0 0 13px;
+  background-color: #000;
+}
+
+.article-grid-footer p{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+}
