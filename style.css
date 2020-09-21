@@ -389,7 +389,8 @@ iframe {
   font-family: serif;
   margin-top: 20px;
 }
-.article-end .header-social{
+
+.article-end .header-social {
   justify-content: flex-end;
 }
 
@@ -398,10 +399,88 @@ iframe {
   padding-right: 90px;
   height: 40px;
 }
-.more-article{
+
+.more-article {
   display: flex;
   width: 1200px;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 20px auto 20px auto;
+}
+
+.more-left {
+  width: 852px;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+}
+
+.more-right {
+  width: 318px;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+
+.more-astronomy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  margin-bottom: 20px;
+}
+
+.more-item p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+.more-item img {
+  width: 100%;
+}
+
+.more-left h1 {
+  display: block;
+  font-weight: bold;
+  margin: 5px 0 20px 0;
+  font-size: 0.875rem;
+}
+
+.more-item .credit {
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.more-item .article-time {
+  text-align: left;
+  color: rgb(153, 153, 153);
+  font-size: 0.75rem;
+}
+
+.most-popular {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.most-popular a {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+}
+
+.most-popular a:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.most-popular h3 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+.editors-picks {
+  border-top: 1px solid #000;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -415,5 +494,24 @@ iframe {
 
   #article-aside {
     margin-left: 0;
+  }
+
+  .more-astronomy {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .more-article {
+    width: 800px;
+  }
+
+  .more-left {
+    width: 600px;
+  }
+
+  .more-right {
+    width: 200px;
+  }
+  .editors-picks{
+    display:none;
   }
 }
