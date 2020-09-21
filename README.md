@@ -24,6 +24,10 @@ We worked on all the requirements given on this project.
 - CSS: Flex and grid
 - Font Awesome
 
+## Live Demo
+
+[Live Demo Link](https://daviidy.github.io/new-york-times/)
+
 ## Authors
 
 👤 **David YAO**
