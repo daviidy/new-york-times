@@ -203,6 +203,56 @@ body {
   font-size: 1.25rem;
   font-family: serif;
 }
-.article-body p{
+
+.article-body p {
   padding-top: 20px;
+}
+aside{
+  width:210px;
+  margin-left: 90px;
+}
+.editors-pick h2{
+  border-bottom: 1px solid rgb(226, 226, 226);
+  font-weight: bold;
+  font-size: 14px;
+}
+.article-with-aside {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+#article-aside{
+  margin-right: 0;
+  margin-left:  300px;
+
+}
+
+.aside-image-container {
+  width:75px;
+}
+
+.aside-image {
+  width: 75px;
+  height: 75px;
+}
+
+.aside-article{
+  display: flex;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.aside-link {
+  display:flex;
+  text-decoration: none;
+}
+.aside-article h3 {
+  margin: auto 0px auto 10px;
+  text-decoration: none;
+  color: #000;
+}
+.aside-article h3:hover {
+  text-decoration: underline;
 }
