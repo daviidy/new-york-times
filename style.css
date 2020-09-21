@@ -25,6 +25,9 @@ section {
 
 body {
   line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #fff;
 }
 
 ol,
@@ -37,10 +40,10 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: '';
   content: none;
 }
@@ -48,12 +51,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  background-color: #fff;
 }
 
 .menu-container {
@@ -94,7 +91,7 @@ body {
   flex-direction: row;
 }
 
-.right-menu button {
+.button-nyt {
   margin-right: 1rem;
   border-radius: 3px;
   cursor: pointer;
@@ -207,15 +204,23 @@ body {
 .article-body p {
   padding-top: 20px;
 }
-aside{
-  width:210px;
+
+.article-body h1 {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+aside {
+  width: 210px;
   margin-left: 90px;
 }
-.editors-pick h2{
+
+.editors-pick h2 {
   border-bottom: 1px solid rgb(226, 226, 226);
   font-weight: bold;
   font-size: 14px;
 }
+
 .article-with-aside {
   display: flex;
   margin-left: auto;
@@ -223,14 +228,13 @@ aside{
   width: 1200px;
 }
 
-#article-aside{
+#article-aside {
   margin-right: 0;
-  margin-left:  300px;
-
+  margin-left: 300px;
 }
 
 .aside-image-container {
-  width:75px;
+  width: 75px;
 }
 
 .aside-image {
@@ -238,87 +242,86 @@ aside{
   height: 75px;
 }
 
-.aside-article{
+.aside-article {
   display: flex;
   margin: 10px;
   font-size: 12px;
 }
 
 .aside-link {
-  display:flex;
+  display: flex;
   text-decoration: none;
 }
+
 .aside-article h3 {
-  margin: auto 0px auto 10px;
+  margin: auto 0 auto 10px;
   text-decoration: none;
   color: #000;
 }
+
 .aside-article h3:hover {
   text-decoration: underline;
 }
 
-
-/*for the theory of inflation grid*/
-
-.article-grid-div{
+/* for the theory of inflation grid */
+.article-grid-div {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
 }
 
-.article-grid-main{
+.article-grid-main {
   margin-left: 0;
   margin-right: 0;
   min-width: 100%;
   max-width: 100%;
 }
 
-.article-grid{
+.article-grid {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.article-grid-title h1{
+
+.article-grid-title h1 {
   font-size: 1.25rem;
   line-height: 24px;
   font-weight: 700;
 }
 
-.article-grid-title p{
-  font-size: .875rem;
+.article-grid-title p {
+  font-size: 0.875rem;
   font-weight: 400;
   margin-top: 5px;
 }
 
-.article-grid-container{
+.article-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
-
-
-.article-grid-item img{
+.article-grid-item img {
   height: 150px;
 }
 
-.article-grid-item-text p{
+.article-grid-item-text p {
   font-size: 14px;
   line-height: 17px;
   font-weight: 300;
-  color: #000000;
+  color: #000;
 }
 
-.article-grid-item-text span{
+.article-grid-item-text span {
   font-size: 11px;
   font-weight: bold;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
-.article-grid-footer{
+.article-grid-footer {
   margin-top: 2rem;
 }
 
-.article-grid-footer::before{
+.article-grid-footer::before {
   width: 60px;
   content: '';
   display: inline-block;
@@ -327,8 +330,90 @@ aside{
   background-color: #000;
 }
 
-.article-grid-footer p{
+.article-grid-footer p {
   font-size: 14px;
   line-height: 17px;
   font-weight: 500;
+}
+
+iframe {
+  margin-top: 50px;
+}
+
+.caption-text {
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+  color: #666;
+  margin-right: 7px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.credit {
+  font-size: 0.825rem;
+  line-height: 1.25rem;
+  color: #666;
+  margin-right: 7px;
+}
+
+.image-container {
+  width: 600px;
+  margin: 20px auto 20px auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .image-container {
+    width: 720px;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
+
+.before-footer {
+  font-size: 0.75rem;
+  color: #333;
+  line-height: 1rem;
+}
+
+.article-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+  font-family: serif;
+  margin-top: 20px;
+}
+.article-end .header-social{
+  justify-content: flex-end;
+}
+
+.article-end button {
+  padding-left: 90px;
+  padding-right: 90px;
+  height: 40px;
+}
+.more-article{
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1200px) {
+  aside {
+    display: none;
+  }
+
+  .article-with-aside {
+    width: 600px;
+  }
+
+  #article-aside {
+    margin-left: 0;
+  }
 }
