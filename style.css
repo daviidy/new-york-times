@@ -259,10 +259,6 @@ aside {
   color: #000;
 }
 
-.aside-article h3:hover {
-  text-decoration: underline;
-}
-
 /* for the theory of inflation grid */
 .article-grid-div {
   margin-left: auto;
@@ -467,11 +463,6 @@ iframe {
   color: rgb(18, 18, 18);
 }
 
-.most-popular a:hover {
-  text-decoration: none;
-  color: #555;
-}
-
 .most-popular h3 {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -483,8 +474,8 @@ iframe {
   padding-top: 20px;
 }
 
-/*nav footer*/
-.nav-footer{
+/* nav footer */
+.nav-footer {
   display: flex;
   flex-direction: column;
   width: 1200px;
@@ -492,7 +483,7 @@ iframe {
   padding: 0 2rem;
 }
 
-.nav-footer::before{
+.nav-footer::before {
   background-color: #fff;
   border-bottom: 1px solid #e2e2e2;
   border-top: 2px solid #e2e2e2;
@@ -502,54 +493,53 @@ iframe {
   margin-top: 0;
 }
 
-.header-nav-footer{
+.header-nav-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.home-page-link{
+.home-page-link {
   margin-top: 8px;
 }
 
-#home-page-link{
+#home-page-link {
   color: rgb(86, 123, 149);
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 11px;
   text-decoration: none;
-
 }
 
-.sections-nav{
+.sections-nav {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
   justify-content: space-between;
 }
 
-.sections-nav section{
+.sections-nav section {
   display: block;
 }
 
-.sections-nav section:nth-child(6){
+.sections-nav section:nth-child(6) {
   border-left: 1px solid rgb(226, 226, 226);
   padding-left: 15px;
 }
 
-.sections-nav h3{
+.sections-nav h3 {
   color: rgb(51, 51, 51);
   font-size: 13px;
   font-weight: 700;
   height: 25px;
   line-height: 15px;
-  margin: 0px;
+  margin: 0;
   text-transform: uppercase;
   width: 150px;
 }
 
-.sections-nav a{
+.sections-nav a {
   color: rgb(0, 0, 0);
   display: inline-block;
   text-decoration: none;
@@ -560,15 +550,11 @@ iframe {
   line-height: 16px;
 }
 
-.sections-nav a:hover, .footer-menu a:hover{
-  text-decoration: underline;
-}
-
-.first-ul li{
+.first-ul li {
   margin-bottom: 5px;
 }
 
-.first-ul a{
+.first-ul a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   text-transform: capitalize;
@@ -579,49 +565,63 @@ iframe {
   width: 200px;
 }
 
-.first-ul i{
+.first-ul i {
   margin-right: 7px;
 }
 
-.second-ul{
+.second-ul {
   margin-bottom: 13px;
 }
 
-.second-ul a, .third-ul a{
+.second-ul a,
+.third-ul a {
   font-size: 11px;
 }
 
-.third-ul{
+.third-ul {
   border-top: 1px solid rgb(226, 226, 226);
 }
 
-/*footer*/
-
-footer{
+/* footer */
+footer {
   width: 1200px;
-  margin:auto;
+  margin: auto;
   padding: 0 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
 }
 
-.footer-menu{
+.footer-menu {
   padding-top: 9px;
   display: flex;
   flex-direction: row;
   border-top: 1px solid #ebebeb;
 }
 
-.footer-menu ul:nth-child(2){
+.footer-menu ul:nth-child(2) {
   display: flex;
   flex-direction: row;
 }
 
-.footer-menu a{
+.footer-menu a {
   color: #666;
   font-size: 10px;
   text-decoration: none;
   padding: 10px;
+}
+
+.most-popular a:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.sections-nav a:hover,
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.aside-article h3:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -652,7 +652,8 @@ footer{
   .more-right {
     width: 200px;
   }
-  .editors-picks{
-    display:none;
+
+  .editors-picks {
+    display: none;
   }
 }
