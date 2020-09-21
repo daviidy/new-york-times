@@ -483,6 +483,147 @@ iframe {
   padding-top: 20px;
 }
 
+/*nav footer*/
+.nav-footer{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.nav-footer::before{
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 2px solid #e2e2e2;
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: 0;
+}
+
+.header-nav-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page-link{
+  margin-top: 8px;
+}
+
+#home-page-link{
+  color: rgb(86, 123, 149);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  text-decoration: none;
+
+}
+
+.sections-nav{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.sections-nav section{
+  display: block;
+}
+
+.sections-nav section:nth-child(6){
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 15px;
+}
+
+.sections-nav h3{
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  margin: 0px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.sections-nav a{
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.sections-nav a:hover, .footer-menu a:hover{
+  text-decoration: underline;
+}
+
+.first-ul li{
+  margin-bottom: 5px;
+}
+
+.first-ul a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  width: 200px;
+}
+
+.first-ul i{
+  margin-right: 7px;
+}
+
+.second-ul{
+  margin-bottom: 13px;
+}
+
+.second-ul a, .third-ul a{
+  font-size: 11px;
+}
+
+.third-ul{
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+/*footer*/
+
+footer{
+  width: 1200px;
+  margin:auto;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu{
+  padding-top: 9px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ebebeb;
+}
+
+.footer-menu ul:nth-child(2){
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-menu a{
+  color: #666;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+
 @media only screen and (max-width: 1200px) {
   aside {
     display: none;
