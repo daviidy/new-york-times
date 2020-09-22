@@ -1,0 +1,686 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.menu-container {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 200;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-menu {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.left-menu i {
+  margin-right: 1.5rem;
+}
+
+.left-menu span {
+  font-size: 14.25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-nyt {
+  margin-right: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.6s ease 0s;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  color: #fff;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 11px 12px 8px;
+  text-transform: uppercase;
+}
+
+.aricle-header {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+  padding-bottom: 20px;
+  font-size: 2em;
+  width: 50vw;
+}
+
+.header-image {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-image img {
+  width: 70vw;
+}
+
+.header-caption {
+  display: block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+  width: 70vw;
+}
+
+.subnotes-container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.subnotes-container h3 {
+  text-decoration: underline;
+  font-weight: 800;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.header-social {
+  margin-top: 15px;
+  display: flex;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-social ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-button a svg {
+  margin: 5px;
+  background-color: #eee;
+  border: #eee solid 1px;
+  border-radius: 50%;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.article-time {
+  font-size: 14px;
+}
+
+.article-body {
+  display: block;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+  font-family: serif;
+}
+
+.article-body p {
+  padding-top: 20px;
+}
+
+.article-body h2 {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+aside {
+  width: 210px;
+  margin-left: 90px;
+}
+
+.editors-pick h2 {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.article-with-aside {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+#article-aside {
+  margin-right: 0;
+  margin-left: 300px;
+}
+
+.aside-image-container {
+  width: 75px;
+}
+
+.aside-image {
+  width: 75px;
+  height: 75px;
+}
+
+.aside-article {
+  display: flex;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.aside-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.aside-article h3 {
+  margin: auto 0 auto 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* for the theory of inflation grid */
+.article-grid-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.article-grid-main {
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.article-grid {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.article-grid-title h2 {
+  font-size: 1.25rem;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.article-grid-title p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.article-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: url(./images/inflation.png);
+  background-size: cover;
+  padding-top: 10rem;
+  grid-row-gap: 165px;
+  grid-column-gap: 10px;
+  margin-top: 15px;
+}
+
+.article-grid-item img {
+  height: 150px;
+}
+
+.article-grid-item-text p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #000;
+}
+
+.article-grid-item-text span {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.article-grid-footer {
+  margin-top: 2rem;
+}
+
+.article-grid-footer::before {
+  width: 60px;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin: 0 0 13px;
+  background-color: #000;
+}
+
+.article-grid-footer p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+iframe {
+  margin-top: 50px;
+}
+
+.caption-text {
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+  color: #666;
+  margin-right: 7px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.credit {
+  font-size: 0.825rem;
+  line-height: 1.25rem;
+  color: #666;
+  margin-right: 7px;
+}
+
+.image-container {
+  width: 600px;
+  margin: 20px auto 20px auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .image-container {
+    width: 720px;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
+
+.before-footer {
+  font-size: 0.75rem;
+  color: #333;
+  line-height: 1rem;
+}
+
+.article-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+  font-family: serif;
+  margin-top: 20px;
+}
+
+.article-end .header-social {
+  justify-content: flex-end;
+}
+
+.article-end button {
+  padding-left: 90px;
+  padding-right: 90px;
+  height: 40px;
+}
+
+.more-article {
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
+  margin: 20px auto 20px auto;
+}
+
+.more-left {
+  width: 852px;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+}
+
+.more-right {
+  width: 318px;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+
+.more-astronomy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  margin-bottom: 20px;
+}
+
+.more-item p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+.more-item img {
+  width: 100%;
+}
+
+.more-left h1 {
+  display: block;
+  font-weight: bold;
+  margin: 5px 0 20px 0;
+  font-size: 0.875rem;
+}
+
+.more-item .credit {
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.more-item .article-time {
+  text-align: left;
+  color: rgb(153, 153, 153);
+  font-size: 0.75rem;
+}
+
+.most-popular {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.most-popular a {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+}
+
+.most-popular h3 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+.editors-picks {
+  border-top: 1px solid #000;
+  padding-top: 20px;
+}
+
+/* nav footer */
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.nav-footer::before {
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 2px solid #e2e2e2;
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: 0;
+}
+
+.header-nav-footer {
+  display: block;
+}
+
+.home-page-link {
+  margin-top: 8px;
+  float: right;
+}
+
+#home-page-link {
+  color: rgb(86, 123, 149);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  text-decoration: none;
+}
+
+.sections-nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.sections-nav section {
+  display: block;
+}
+
+.sections-nav section:nth-child(6) {
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 15px;
+}
+
+.sections-nav h3 {
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  margin: 0;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.sections-nav a {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.first-ul li {
+  margin-bottom: 5px;
+}
+
+.first-ul a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  width: 200px;
+}
+
+.first-ul i {
+  margin-right: 7px;
+}
+
+.second-ul {
+  margin-bottom: 13px;
+}
+
+.second-ul a,
+.third-ul a {
+  font-size: 11px;
+}
+
+.third-ul {
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+/* footer */
+footer {
+  width: 1200px;
+  margin: auto;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu {
+  padding-top: 9px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ebebeb;
+}
+
+.footer-menu ul:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-menu a {
+  color: #666;
+  font-size: 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.sticky-footer {
+  position: fixed;
+  background-color: #fff;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #000;
+  padding: 20px;
+}
+
+.sticky-left {
+  float: left;
+}
+
+.sticky-right {
+  display: flex;
+  float: right;
+}
+
+.sticky-right i {
+  margin-left: 15px;
+}
+
+.most-popular a:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.sections-nav a:hover,
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.aside-article h3:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  aside {
+    display: none;
+  }
+
+  .article-with-aside {
+    width: 600px;
+  }
+
+  #article-aside {
+    margin-left: 0;
+  }
+
+  .more-astronomy {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .more-article {
+    width: 800px;
+  }
+
+  .more-left {
+    width: 600px;
+  }
+
+  .more-right {
+    width: 200px;
+  }
+
+  .editors-picks {
+    display: none;
+  }
+}
