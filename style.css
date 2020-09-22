@@ -205,7 +205,7 @@ table {
   padding-top: 20px;
 }
 
-.article-body h1 {
+.article-body h2 {
   font-weight: bold;
   padding-top: 20px;
 }
@@ -278,7 +278,7 @@ aside {
   margin-bottom: 15px;
 }
 
-.article-grid-title h1 {
+.article-grid-title h2 {
   font-size: 1.25rem;
   line-height: 24px;
   font-weight: 700;
@@ -612,6 +612,28 @@ footer {
   font-size: 10px;
   text-decoration: none;
   padding: 10px;
+}
+
+.sticky-footer{
+  position: fixed;
+  background-color: #fff;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #000;
+  padding: 20px;
+}
+
+.sticky-left{
+  float: left;
+}
+
+.sticky-right{
+  display: flex;
+  float: right;
+}
+.sticky-right i {
+  margin-left: 15px;
 }
 
 .most-popular a:hover {
