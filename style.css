@@ -293,7 +293,12 @@ aside {
 .article-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  background: url(./images/inflation.png);
+  background-size: cover;
+  padding-top: 10rem;
+  grid-row-gap: 165px;
+  grid-column-gap: 10px;
+  margin-top: 15px;
 }
 
 .article-grid-item img {
@@ -494,13 +499,12 @@ iframe {
 }
 
 .header-nav-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: block;
 }
 
 .home-page-link {
   margin-top: 8px;
+  float: right;
 }
 
 #home-page-link {
