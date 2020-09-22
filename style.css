@@ -614,7 +614,7 @@ footer {
   padding: 10px;
 }
 
-.sticky-footer{
+.sticky-footer {
   position: fixed;
   background-color: #fff;
   z-index: 999;
@@ -624,14 +624,15 @@ footer {
   padding: 20px;
 }
 
-.sticky-left{
+.sticky-left {
   float: left;
 }
 
-.sticky-right{
+.sticky-right {
   display: flex;
   float: right;
 }
+
 .sticky-right i {
   margin-left: 15px;
 }
